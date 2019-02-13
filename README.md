@@ -39,6 +39,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br>
+Will also compare and update snapshots<br>
+
+### `yarn run storybook`
+
+Launches Storybook app on Port : 9009<br>
 
 ### `yarn run build`
 
@@ -52,6 +57,16 @@ It correctly bundles React in production mode and optimizes the build for the be
 * Snapshot testing verifies the generated HTML code for UI components
 * Unit tests can be used to test specific logic with Jest and Enzyme
   * Note: "It's possible that as the project matures, and the exact implementation of the Task changes --perhaps using a different classname or a textarea rather than an input--the test will fail, and need to be updated. This is not necessarily a problem, but rather an indication to be careful liberally using unit tests for UI. They're not easy to maintain. Instead rely on visual, snapshot, and visual regression (see testing chapter) tests where possible"
+
+
+## Usage Notes
+
+* Adding Storybook
+  * `npx -p @storybook/cli sb init`
+* Adding Snapshot testing
+  * [StoryShots](https://github.com/storybooks/storybook/tree/master/addons/storyshots)
+  * `yarn add --dev @storybook/addon-storyshots react-test-renderer require-context.macro`
+  *
 
 ## Resources
 
