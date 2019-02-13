@@ -25,37 +25,34 @@ Chromatic Storybook testing demo. Uses React Create React App demo app.
 
 ## Chromatic Setup
 
-## Resources
-
-
-
-## React Test Project Information
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* Get Chromatic account
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
+### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `yarn run build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Notes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Storybooks are based on [CDD - Component Driven Development](https://blog.hichroma.com/component-driven-development-ce1109d56c8e) and [Visual TDD](https://blog.hichroma.com/visual-test-driven-development-aec1c98bed87)
+* Storybooks allow manual visual testing
+* Snapshot testing verifies the generated HTML code for UI components
+* Unit tests can be used to test specific logic with Jest and Enzyme
+  * Note: "It's possible that as the project matures, and the exact implementation of the Task changes --perhaps using a different classname or a textarea rather than an input--the test will fail, and need to be updated. This is not necessarily a problem, but rather an indication to be careful liberally using unit tests for UI. They're not easy to maintain. Instead rely on visual, snapshot, and visual regression (see testing chapter) tests where possible"
+
+## Resources
+
+- [Create React App](https://github.com/facebook/create-react-app)
