@@ -17,7 +17,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "./node_modules/.bin/chromatic test"
+    "chromatic": "./node_modules/.bin/chromatic test",
+    "build-storybook": "build-storybook -c .storybook"
   },
   "eslintConfig": {
     "extends": "react-app"
