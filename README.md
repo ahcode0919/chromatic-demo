@@ -70,8 +70,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 - [Chromatic Guide](http://docs.chromaticqa.com/)
 - [Create React App](https://github.com/facebook/create-react-app)
 - [Jest](https://jestjs.io/) - Javascript testing framework
+- [Chromatic: Visual Testing Handbook](https://www.chromaticqa.com/book/visual-testing-handbook)
 - [Storybook](https://storybook.js.org/) - UI development environment
 - [Storybook Tutorial](https://www.learnstorybook.com/react/en/get-started/)
 - [Storybook Documentation](https://storybook.js.org/basics/introduction/)
+- [Storybook Workflow](https://blog.hichroma.com/the-delightful-storybook-workflow-b322b76fd07)
 - [Storybook Add-ons](https://storybook.js.org/addons/addon-gallery/)
 - [Storybook Knobs Add-on](https://github.com/storybooks/storybook/tree/master/addons/knobs#object)
