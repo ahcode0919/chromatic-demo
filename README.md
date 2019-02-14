@@ -2,30 +2,15 @@
 
 Chromatic Storybook testing demo. Uses React Create React App demo app.
 
-## Chromatic Docs
-
-[Chromatic Guide](http://docs.chromaticqa.com/)
-
-## Storybook
-
-[Storybook](https://storybook.js.org/) - UI development environment
-[Storybook Tutorial](https://www.learnstorybook.com/react/en/get-started/)
-[Storybook Documentation](https://storybook.js.org/basics/introduction/)
-
-## Test Runner
-
-[Jest](https://jestjs.io/) - Javascript testing framework
-
 ## Project Setup
-* Note: These have already been completed
 
 * Install Yarn - `brew install yarn`
-* Create test React Application - `npx create-react-app {root-directory}/`
 * Install Storybook - `npx -p @storybook/cli sb init`
 
 ## Chromatic Setup
 
 * Get Chromatic account
+* Configure your project and get your app ID
 
 ## Available Scripts
 
@@ -45,6 +30,12 @@ Will also compare and update snapshots<br>
 
 Launches Storybook app on Port : 9009<br>
 
+### `yarn chromatic -- --app-code="{app-code}" --do-not-start`
+
+* Use `--do-not-start` if you already have storybook running locally
+* `app-code` is the unique app code displayed on chromatic's website for your app
+* Full command is: `./node_modules/.bin/chromatic test --app-code="{app-code}"`
+
 ### `yarn run build`
 
 Builds the app for production to the `build` folder.<br>
@@ -57,6 +48,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 * Snapshot testing verifies the generated HTML code for UI components
 * Unit tests can be used to test specific logic with Jest and Enzyme
   * Note: "It's possible that as the project matures, and the exact implementation of the Task changes --perhaps using a different classname or a textarea rather than an input--the test will fail, and need to be updated. This is not necessarily a problem, but rather an indication to be careful liberally using unit tests for UI. They're not easy to maintain. Instead rely on visual, snapshot, and visual regression (see testing chapter) tests where possible"
+* Visual tests are too manual, snapshot tests trigger too many false positives when used for UI, and pixel-level unit tests are poor value. A complete Storybook testing strategy also includes visual regression tests. Visual regression tests are designed to catch changes in appearance. They work by capturing screenshots of every story and comparing them commit-to-commit to surface changes. This is perfect for verifying graphical elements like layout, color, size, and contrast.
 
 
 ## Usage Notes
@@ -66,8 +58,17 @@ It correctly bundles React in production mode and optimizes the build for the be
 * Adding Snapshot testing
   * [StoryShots](https://github.com/storybooks/storybook/tree/master/addons/storyshots)
   * `yarn add --dev @storybook/addon-storyshots react-test-renderer require-context.macro`
-  *
+* Adding Chromatic
+  * `yarn add storybook-chromatic`
+* Running Chromatic tests
+  * `./node_modules/.bin/chromatic test --app-code="{app-code}"`
 
 ## Resources
 
+- [Chromatic Guide](http://docs.chromaticqa.com/)
 - [Create React App](https://github.com/facebook/create-react-app)
+- [Jest](https://jestjs.io/) - Javascript testing framework
+- [Storybook](https://storybook.js.org/) - UI development environment
+- [Storybook Tutorial](https://www.learnstorybook.com/react/en/get-started/)
+- [Storybook Documentation](https://storybook.js.org/basics/introduction/)
+- [Storybook Add-ons](https://storybook.js.org/addons/addon-gallery/)
