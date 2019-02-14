@@ -62,6 +62,8 @@ It correctly bundles React in production mode and optimizes the build for the be
   * `yarn add storybook-chromatic`
 * Running Chromatic tests
   * `./node_modules/.bin/chromatic test --app-code="{app-code}"`
+* Adding Knobs add-on
+  * `yarn add @storybook/addon-knobs`
 
 ## Resources
 
@@ -72,3 +74,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 - [Storybook Tutorial](https://www.learnstorybook.com/react/en/get-started/)
 - [Storybook Documentation](https://storybook.js.org/basics/introduction/)
 - [Storybook Add-ons](https://storybook.js.org/addons/addon-gallery/)
+- [Storybook Knobs Add-on](https://github.com/storybooks/storybook/tree/master/addons/knobs#object)
